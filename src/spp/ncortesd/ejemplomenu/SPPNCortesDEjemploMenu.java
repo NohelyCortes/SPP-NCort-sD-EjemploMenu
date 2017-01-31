@@ -18,6 +18,7 @@ public class SPPNCortesDEjemploMenu {
     public static void main(String[] args) {
         // Variables
         int opEntrada;
+        double lado, resultado;
         Scanner kb = new Scanner (System.in);
         //Desplegar Menú
         System.out.println("Calculadora de áreas, perímetros y volúmenes");
@@ -31,12 +32,24 @@ public class SPPNCortesDEjemploMenu {
         switch (opEntrada){
             case 1:
                 System.out.println("Bienvenido al cálculo de áreas");
+                System.out.println("Introduce el lado del cuadrado");
+                lado=kb.nextDouble();
+                resultado= Math.pow(lado,2);
+                System.out.println("El área del cuadrado es "+ resultado);
                 break;
             case 2:
                 System.out.println("Bienvenido al cálculo de perímetros");
+                System.out.println("Introduce el lado del cuadrado");
+                lado =kb.nextDouble();
+                resultado= lado*4;
+                System.out.println("El resultado del perímetro es " + resultado);
                 break;
             case 3:
                 System.out.println("Bienvenido al cálculo de volúmenes");
+                System.out.println("Introduce el lado del cuadrado");
+                lado= kb.nextDouble();
+                resultado= Math.pow(lado,3);
+                System.out.println("El resultado del volumen es "+ resultado);
                 break;
             default:
                 System.out.println("Adiós");
